@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "secure.ignored",
+      "type": "com.jenson.ecommerce.config.IgnoreUrlsConfig",
+      "sourceType": "com.jenson.ecommerce.config.IgnoreUrlsConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "secure.ignored.urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.jenson.ecommerce.config.IgnoreUrlsConfig"
+    }
+  ],
+  "hints": []
+}
