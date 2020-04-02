@@ -3,7 +3,6 @@ package com.jenson.ecommerce.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -24,11 +23,11 @@ import java.util.List;
 @EnableSwagger2
 public class Swagger2Config{
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.jenson.commerce"))
+                .apis(RequestHandlerSelectors.basePackage("com.jenson.ecommerce"))
                 .paths(PathSelectors.any())
                 .build()
                 .securitySchemes(securitySchemes())
