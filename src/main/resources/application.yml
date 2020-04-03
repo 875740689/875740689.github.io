@@ -40,8 +40,8 @@ secure:
 aliyun:
   oss:
     endpoint: oss-cn-beijing.aliyuncs.com # oss对外服务的访问域名
-    accessKeyId: LTAI4Fnvf7zMUZHhBrtQKXye # 访问身份验证中用到用户标识
-    accessKeySecret: ATZGxgAaxEcHdLfxR5PNluQ9rpxN4S # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
+    accessKeyId: accessKeyId # 访问身份验证中用到用户标识
+    accessKeySecret: accessKetSecret # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
     bucketName: jenson-ecommerce # oss的存储空间
     policy:
       expire: 300 # 签名有效期(S)
